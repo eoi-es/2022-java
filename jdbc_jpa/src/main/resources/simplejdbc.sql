@@ -1,0 +1,14 @@
+CREATE SCHEMA  jdbc_test;
+
+CREATE TABLE jdbc_test.CLIENT (
+  DNI VARCHAR(10) NOT NULL,
+  NAME  VARCHAR(255),
+  AGE  INT,
+  PRIMARY KEY (DNI)
+);
+
+INSERT INTO jdbc_test.CLIENT VALUES ("111333555J", "Pepe Martinez", 30);
+INSERT INTO jdbc_test.CLIENT VALUES ("222333555J", "Juan Sánchez", 24);
+INSERT INTO jdbc_test.CLIENT VALUES ("546545553J", "Juan Torralba", 35);
+INSERT INTO jdbc_test.CLIENT VALUES ("333333555J", "Ricardo Tormo", 77);
+INSERT INTO jdbc_test.CLIENT VALUES ("126459675J", "Sandra Martín", 89);

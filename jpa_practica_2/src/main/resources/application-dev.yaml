@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./target/h2db/db/base;AUTO_SERVER=TRUE;DB_CLOSE_DELAY=-1
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  h2:
+    console:
+      enabled: true

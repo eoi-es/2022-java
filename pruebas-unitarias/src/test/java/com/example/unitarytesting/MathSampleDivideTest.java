@@ -15,8 +15,8 @@ public class MathSampleDivideTest {
 
     @Parameterized.Parameters(name = "Input: {index} -> divide({0}, {1})={2}")
     public static Iterable<Object[]> data() {
-        return Arrays.asList(new Object[][] {
-                { 0, 1, Double.valueOf(0d) }, { 6, 2, Double.valueOf(3d) }
+        return Arrays.asList(new Object[][]{
+                {0, 1, Double.valueOf(0d)}, {6, 2, Double.valueOf(3d)}
         });
     }
 
@@ -37,4 +37,5 @@ public class MathSampleDivideTest {
         // Arrange
         Assert.assertEquals(expected, result, 2);
     }
+
 }

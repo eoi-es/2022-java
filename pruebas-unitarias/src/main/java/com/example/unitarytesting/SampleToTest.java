@@ -2,8 +2,13 @@ package com.example.unitarytesting;
 
 import javax.naming.OperationNotSupportedException;
 
-// TODO: to cover
 public class SampleToTest {
+
+    private final MathSample mathSample;
+
+    public SampleToTest(MathSample mathSample) {
+        this.mathSample = mathSample;
+    }
 
     public String concatString(String var) {
         return String.format("%s - concatenated", var);
@@ -22,7 +27,6 @@ public class SampleToTest {
     }
 
     public Number mathOperation(Integer a, Integer b, String operation) throws OperationNotSupportedException {
-        final MathSample mathSample = new MathSample();
         switch (operation) {
             case "/":
                 return mathSample.divide(a, b);
